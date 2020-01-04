@@ -1,0 +1,87 @@
+          
+			.title{
+				width:1536px;
+				height:80px;
+				position: absolute;
+				top: 0px;
+				background: rgb(119,136,153,0.5);
+				
+			}
+			.title .menu{
+				float: left;
+				width:400px;
+				height: 50px;
+				padding: 10px;
+				padding-top: 20px;
+				margin-left: 480px;	
+			}
+			.title .logo{
+				width: 200px;
+				height: 80px;
+				margin-left: 150px;
+				margin-right: 100px;
+				float: left;
+				background: url(../img/logo.png);
+			}
+			.title .menu div{
+				color: #FFFFFF;
+				width: 80px;
+				height: 50px;
+				float: left;
+				font-size: 25px;
+				line-height: 50px;
+				text-align: center;
+				cursor:pointer;
+				
+			}
+			.title .menu div:hover{
+				background: #808080;
+				}
+			.title .head{
+				width: 60px;
+				height:60px;
+				margin: 10px;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			.title .head .setting{
+				width: 280px;
+				height:250px;
+				margin: 10px;
+				float: left;
+				position: absolute;
+				left: -120px;
+				top: 60px;
+				background: #808080;
+				z-index: 1;
+				
+			}
+			.title .head .setting div{
+			    color: #FFFFFF;
+				width: 150px;
+				height: 40px;
+				margin: auto;
+				line-height: 40px;
+				text-align: center;
+				border-bottom: solid #FFFFFF 1px;
+			}
+			.title .head:hover{
+				overflow: visible;
+			}
+			.round_icon{
+				width: 60px;
+			    height: 60px;
+				display: flex;
+				border-radius: 50%;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+			}
+            body{
+				background: rgb(176,196,222,0.9);/*添加背景图片*/
+				background-position: center center ;/*设置垂直 水平居中*/
+				background-repeat: no-repeat;/*设置背景图片不平铺*/
+				background-attachment: fixed;/*当内容高度大于图片高度时，背景图片的位置相对于viewport固定*/
+				background-size: cover;/*让背景图片基于容器大小伸缩*/
+				}

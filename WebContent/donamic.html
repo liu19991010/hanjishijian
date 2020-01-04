@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/title.css" />
+		<style type="text/css">
+			*{
+				margin: 0;
+			    padding:0px;
+                font-family: 华文新魏;	    
+			}
+			body{
+				background:url("img/bg.png");
+				background-position: center center ;/*设置垂直 水平居中*/
+				background-repeat: no-repeat;/*设置背景图片不平铺*/
+				background-attachment: fixed;/*当内容高度大于图片高度时，背景图片的位置相对于viewport固定*/
+				background-size: cover;/*让背景图片基于容器大小伸缩*/
+			}
+			.donamic{
+				width: 100%;
+				height: 290px;
+			}
+			.next{
+				width: 100%;
+				height: 40px;
+				background: rgb(0,0,0,0.8);
+			}
+			.next div{
+				color: #FFFFFF;
+				font-family: "微软雅黑";
+				line-height: 40px;
+				font-size:15px;
+				width:700px;
+				height:40px;
+				margin: auto;
+			}
+			.content{
+				width: 1000px;
+				margin: auto;
+				
+			}
+			.weight{
+				width: 800px;
+				margin: auto;
+				background: rgb(0,0,0,0.8);
+			}
+			.weight .con{
+				width: 100%;
+				height: 200px;
+			}
+			.weight .con .connect{
+				width: 750px;
+				padding: 5px;
+				height: 100px;
+				margin: 20px;
+				border: solid 1px #FFFFFF;
+				font-family: "微软雅黑";
+				background: none;
+				color: #FFFFFF;
+				
+			}
+			.weight .con .publish{
+				width: 80px;
+				height: 25px;
+				background: none;
+				color: #FFFFFF;
+				border: solid 1px #FFFFFF;
+				margin-right: 50px;
+				float: right;
+			}
+			.weight li{
+				list-style-type: none;
+				width: 750px;
+				
+				padding: 5px;
+				margin: 20px;
+				border-top:solid 1px #FFFFFF ;
+				
+			}
+			.weight li .con1{
+				width: 720px;
+				height: 100px;
+				padding: 4px;
+				margin: 10px;
+				background: #000000;
+			}
+			
+			.weight li .con1 .connect1{
+				width: 720px;
+				height: 50px;
+				border: solid 1px #FFFFFF;
+				font-family: "微软雅黑";
+				background: none;
+				margin-bottom: 10px;
+				color: #FFFFFF;
+				
+			}
+			.weight li .con1 .publish1{
+				width: 80px;
+				height: 25px;
+				background: none;
+				color: #FFFFFF;
+				border: solid 1px #FFFFFF;
+				margin-right: 20px;
+				float: right;
+			}
+			.weight li .weig{
+				width: 100%;
+				padding: 10px;
+				color: #FFFFFF;
+				font-family: "微软雅黑";
+				font-size: 15px;
+				letter-spacing: 1px;
+				
+			}
+			.discull{
+				width: 740px;
+				
+				border-top: solid 1px #FFFFFF;
+				border-bottom: solid 1px #FFFFFF;
+				padding: 5px;
+				
+			}
+			.discull li{
+				border-top:solid 0px #FFFFFF ;
+				list-style-type: none;
+				width: 720px;
+				height: 30px;
+				padding: 5px;
+				margin: 0px;
+			}
+			.discull li .a{
+				float: left;
+				width: 40px;
+				height: 40px;
+				margin-right: 5px;
+			}
+			.discull li .a img{
+				width: 30px;
+			    height: 30px;
+				display: flex;
+				align-items: center;
+				border-radius: 50%;
+				justify-content: center;
+				overflow: hidden;
+			}
+			.discull li .b{
+				height: 30px;
+				font-family: "微软雅黑";
+				line-height: 30px;
+				width: 650px;
+				font-size: 12px;
+				float: left;
+				background: #B0C4DE;
+			}
+			
+			
+		 .one{
+				width: 120px;
+				height: 120px;
+                position: absolute;
+                background: #B0C4DE;
+                top: 185px;
+                left: 260px;  
+                overflow: hidden;
+                border: solid 3px #B0C4DE;
+                z-index: 1;
+			}
+			.one img{
+				width: 120px;
+			    height: 120px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+			}
+			.name{
+				position: absolute;
+				top: 250px;
+				left: 390px;
+				width: 400px;
+				height: 40px;
+				color: #FFFFFF;
+				line-height: 40px;
+				font-size: 23px;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="title" style="background: rgb(0,0,0,0.7);">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="index.html"><div >主页</div></a>
+				<a href="qingniao.html"><div>青鸟</div></a>
+				<a href="travel.html"><div>旅行</div></a>
+				<a href="study.html"><div>书斋</div></a>
+				<div style="color: #f99d14;">动态</div>
+			</div>
+			<div class="head">
+				<img src="img/bg.png" class="round_icon" />
+			    <div class="setting">
+			    	<div>设置</div>
+			    	<div>设置</div>
+			    	<div>设置</div>
+			    	<div>设置</div>
+			    	<div>设置</div>
+			    </div>
+			</div>
+			</div>
+			<div class="one"><img src="img/bg.png"/></div>
+			<div class="name">时光清浅</div>
+			<div class="donamic">
+				<img src="img/donamic.png" />
+			</div>
+			<div class="next">
+				<div> 时光清浅，岁月静好</div>
+			</div>
+			<div class="content">
+				<div class="weight">
+					<div class="con">
+						<textarea class="connect" name="connect" id="connect" placeholder="请输入内容！"></textarea>
+						<input type="submit" name="publish" id="publish" class="publish" value="发布" />
+					</div>
+					<div style="clear:both"></div>
+					<ul>
+						<li>
+							
+							<div class="weig">
+								设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置
+							</div>
+							
+							
+							
+							
+							
+							
+							
+							
+							<div class="discull">
+								<ul>
+									<li >
+										<div class="a">
+											<img src="img/b.png" />
+										</div>
+										<div class="b">
+											fdsfdfgfdgdfgf微软雅黑
+										</div>
+									</li>
+									<li >
+										<div class="a">
+											<img src="img/b.png" />
+										</div>
+										<div class="b">
+											fdsfdfgfdgdfgf微软雅黑
+										</div>
+									</li>
+									<li >
+										<div class="a">
+											<img src="img/b.png" />
+										</div>
+										<div class="b">
+											fdsfdfgfdgdfgf微软雅黑
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="con1">
+								<textarea class="connect1" name="connect1" id="connect1" placeholder="请输入内容！"></textarea>
+						        <input type="submit" name="publish1" id="publish1" class="publish1" value="发布" />
+							</div>
+							<div style="clear:both"></div>
+						</li>
+					</ul>
+					
+				</div>
+				
+			</div>
+			
+	
+	</body>
+</html>
