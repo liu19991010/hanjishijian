@@ -2,7 +2,7 @@ package com.han.entity;
 
 public class User {
 	String username;
-	int password;
+	String password;
 	String head;
 	int sex;
 	String email;
@@ -10,7 +10,7 @@ public class User {
 	public User(){
 		super();
 	}
-	public User(String username,int password,String head,int sex,String email,int age) {
+	public User(String username,String password,String head,int sex,String email,int age) {
 		this.username = username;
 		this.password = password;
 		this.head = head;
@@ -24,10 +24,10 @@ public class User {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public int getPassword() {
+	public String getPassword() {
 		return password;
 	}
-	public void setPassword(int password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 	public String getHead() {
