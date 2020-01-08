@@ -1,28 +1,22 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<style type="text/css">
-			body{
-				background: url(img/bg.png);/*添加背景图片*/
+body{
+				background: url("../img/bg.png");/*添加背景图片*/
 				background-position: center center ;/*设置垂直 水平居中*/
 				background-repeat: no-repeat;/*设置背景图片不平铺*/
 				background-attachment: fixed;/*当内容高度大于图片高度时，背景图片的位置相对于viewport固定*/
 				background-size: cover;/*让背景图片基于容器大小伸缩*/
 				}
-			*{
-				margin:0px;padding: 0px;
-			}
+			
 			
 			.regist{
+				
 				padding-top: 25px;
 				width: 400px;
-				height: 425px;
+				height: 545px;
 				color: #FFFFFF;
 				background-color: rgba(0,0,0,0.9);
 				margin: auto;
-				margin-top: 100px;
+				margin-top: 40px;
+				
 			}
 			 .top{
 		    	width: 998px;
@@ -127,60 +121,23 @@
             font-family:STSong;
             text-align:center;
             font-weight:bold;
-         }			    
-		</style>
-	</head>
-	<body>
-		<div class="regist">
-			<h1>会员注册</h1>
-		<form class="form-horizontal" action="regist" method="post" style="margin-top:5px;">
-			 <div class="form-group" style="margin-top: 25px;">
-			    <label >用户名</label>
-			      <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名">
-			    </div>
-			   <div class="form-group">
-			    <label >密码</label>
-			      <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
-			  </div>
-			   <div class="form-group">
-			     <label>邮件</label>
-			      <input type="password" class="form-control" id="confirmpwd" neme="email" placeholder="请输入Email">
-			  </div>
-			  <div class="form-group">
-			     <label>年龄</label>
-			      <input type="password" class="form-control" id="confirmpwd" neme="age" placeholder="请输入年龄">
-			  </div>
-		
-			  <div class="form-group opt">  
-			  <label >性别</label>  
-			  
-			    <label class="radio-inline">
-			  <input type="radio" name="sex" id="inlineRadio1" value="1"> 男
-			</label>
-			<label class="radio-inline">
-			  <input type="radio" name="sex" id="inlineRadio2" value="0"> 女
-			</label>
-		
-			 </div>		
-			    <div class="deng">
-			    	<div class="one1"></div>
-			    	<input type="submit"  width="100" value="注册" name="submit" >
-			    </div>
-			</form>
-			</div>
-			
-			  <div class="bottom">
-            <div class="one">
-                &nbsp;&nbsp;&nbsp;&nbsp;总有那样一群人，走过沧桑，冷静理智。对他们而言，爱或离开，念旧或是新生，忘记或是痴缠，多是源于不同经历后，特定情境下，一场慎重的权衡——对方从哪里来，要到那里去，而自己，可愿同路，可能相扶？
-            </div>
-            <div class="two">
-                制作人：刘小勇   王送雨     ||  联系电话：138xxxxxxxx 或 139xxxxxxxx
-            </div>
-        </div>
-			
-			
-			
-			
-		
-	</body>
-</html>
+         }	
+         .head{
+         	width: 80px;
+         	height: 80px;
+         	background:url("../img/add_photo.png");
+            background-size: cover;
+         	border:solid 2px #FFFFFF;
+         	float: left;
+         	position: relative;
+         	}    
+         .round_icon{
+				width: 80px;
+			    height: 80px;
+				display: flex;
+				/*border-radius: 50%;*/
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				
+			}
