@@ -67,7 +67,8 @@ public class UpphotoServlet extends HttpServlet {
             for (FileItem fileItem : fileItems) {
                 if(!fileItem.isFormField()){    //处理上传的表单项
                     //获取文件存盘的目录绝对路径
-                    String uploadPath = this.getServletContext().getRealPath("image");
+//                    String uploadPath = this.getServletContext().getRealPath("image");
+                	String uploadPath = "G:\\java\\workspace\\hanjiashijian\\WebContent\\image";
  
                     File file = new File(uploadPath);
                     //判断文件是否存在，如果不存在就创建文件
