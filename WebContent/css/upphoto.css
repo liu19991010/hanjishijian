@@ -1,9 +1,9 @@
-body{
-				background:url("../img/bg.png");/*添加背景图片*/
-				background-position: center center ;/*设置垂直 水平居中*/
-				background-repeat: no-repeat;/*设置背景图片不平铺*/
-				background-attachment: fixed;/*当内容高度大于图片高度时，背景图片的位置相对于viewport固定*/
-				background-size: cover;/*让背景图片基于容器大小伸缩*/
+   body{
+				background:url("../img/bg.png");/*娣诲姞鑳屾櫙鍥剧墖*/
+				background-position: center center ;/*璁剧疆鍨傜洿 姘村钩灞呬腑*/
+				background-repeat: no-repeat;/*璁剧疆鑳屾櫙鍥剧墖涓嶅钩閾�*/
+				background-attachment: fixed;/*褰撳唴瀹归珮搴﹀ぇ浜庡浘鐗囬珮搴︽椂锛岃儗鏅浘鐗囩殑浣嶇疆鐩稿浜巚iewport鍥哄畾*/
+				background-size: cover;/*璁╄儗鏅浘鐗囧熀浜庡鍣ㄥぇ灏忎几缂�*/
 	 }
 	 .main{
 	 	margin: auto;
@@ -11,7 +11,7 @@ body{
 	 	margin-top: 300px;
 	 	height: 200px;
 	 	color: #FFFFFF;
-	 	background: rgb(0,0,0,0.8);
+	 	background:#000000;
 	 }
 	 .main .m{
 	 	width: 100%;

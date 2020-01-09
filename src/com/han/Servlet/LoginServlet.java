@@ -31,9 +31,12 @@ public class LoginServlet extends HttpServlet {
         System.out.println(username);
         System.out.println(password);
         LoginDao dao = new LoginDaoImpl();
+        request.getSession().setAttribute("name", username);
+//        this.getServletContext().setAttribute("name",username);
         int temp = dao.userExist(username, password);
         if(temp==1) {
-      	  response.getWriter().print("成功");
+        	request.getRequestDispatcher("study.jsp").forward(request, response);
+//      	  response.getWriter().print("成功");
         }else {
       	  response.getWriter().print("失败");
         }

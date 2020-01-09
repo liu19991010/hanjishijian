@@ -18,9 +18,9 @@
 		<form class="form-horizontal" action="regist" method="post" style="margin-top:5px;" >
 			
 			<label style="float: left;margin-left: 70px;margin-top: 30px;margin-right: 30px;font-family: 华文新魏;" >头像</label>
-			 <div class="head">
+			<a href="upphoto.jsp"> <div class="head">
 			<img src="image/<%=request.getAttribute("123")%>" class="round_icon"/>
-			 </div>
+			 </div></a>
 			<%System.out.print(request.getAttribute("123")); %>
 			<%System.out.print(32453); %>
 			<div style="clear:both"></div>

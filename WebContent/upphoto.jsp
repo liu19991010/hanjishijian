@@ -4,12 +4,12 @@
    
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
         <title>上传图片</title>
-        <link rel="stylesheet" type="text/css" href="css/upphoto.css"/>
+         <link rel="stylesheet" type="text/css" href="css/upphoto.css"/>
     </head>
     <body>
-    	<form action="upphoto"  enctype="multipart/form-data" method="post">
+    	<form action="upphoto" method="post" enctype='multipart/form-data'>
     		<div class="main">
     			<div class="m">请选择头像文件</div>
     			<input type="file" name="file" multiple="multiple" class="input1">

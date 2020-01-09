@@ -52,7 +52,7 @@
 				    <div class="deng">
 				    <input type="submit"  width="100" value="登录" name="submit" border="0">
 				    </div>
-				    <a href="regist.html">
+				    <a href="regist.jsp">
 				    <div class="deng">
 				    <input type="button"  width="100" value="注册" name="submit" border="0">
 				    </div></a>
