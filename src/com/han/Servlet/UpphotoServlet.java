@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -35,12 +36,11 @@ public class UpphotoServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        PrintWriter out = response.getWriter();
-        Map<String,Object> map = new HashMap<String,Object>();
- 
-        String test = request.getParameter("file");
-        System.out.println(test);
-        System.out.println(13412);
+//        PrintWriter out = response.getWriter();
+//        Map<String,Object> map = new HashMap<String,Object>();
+// 
+//        String test = request.getParameter("file");
+       
  
         //首先判断表单是否支持文件上传,即是否有:enctype="multipart/form-data"
         boolean isMutipart = ServletFileUpload.isMultipartContent(request);
@@ -75,13 +75,16 @@ public class UpphotoServlet extends HttpServlet {
                     if (!file.exists()) {
                         file.mkdirs();
                     }
- 
+                   
+                    
                     //获取文件上传的名称
                     String filename = fileItem.getName();// 文件名称，可能带路径
                     filename = FilenameUtils.getName(filename);// 文件名称，不带路径
+                    filename = getRandomName(filename);
  
                     //根据路径创建一个file对象
                     File uploadFile = new File(uploadPath,filename);
+                    System.out.println(uploadFile+"我");
                     //上传文件，然后删除临时文件
                     fileItem.write(uploadFile);
                     //设置url给对象
@@ -117,4 +120,10 @@ public class UpphotoServlet extends HttpServlet {
 		doGet(request, response);
 	}
 
+	 public static String getRandomName(String fileName){
+	        int index=fileName.lastIndexOf(".");
+	        String houzhui=fileName.substring(index);//获取后缀名
+	        String uuidFileName=UUID.randomUUID().toString().replace("-","")+houzhui;
+	        return uuidFileName;
+	    }
 }

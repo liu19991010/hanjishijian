@@ -38,7 +38,6 @@ public class LoginDaoImpl extends DBUtile implements LoginDao {
 //		}finally {
 //			super.closeALL(conn, ps, rs);
 //		}
-//		
 		return null;
 	}
 	@Override
@@ -58,6 +57,29 @@ public class LoginDaoImpl extends DBUtile implements LoginDao {
 			super.closeALL(conn, ps, rs);
 		}
 		
+		return temp;
+	}
+	
+	/*
+	 * 根据用户查找头像
+	 */
+	@Override
+	public String findHead(String username) {
+		String temp = null;
+		conn = super.getConnection();
+		String sql = "select head from user where username=?";
+		try {
+			ps = conn.prepareStatement(sql);
+			 ps.setString(1, username);
+			rs=ps.executeQuery();
+			while(rs.next()) {
+				temp = rs.getString(1);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			super.closeALL(conn, ps, rs);
+		}
 		return temp;
 	}
 	

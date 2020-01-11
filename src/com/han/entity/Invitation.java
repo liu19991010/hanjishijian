@@ -17,7 +17,6 @@ public class Invitation {
 		this.bookname = bookname;
 		this.connect = connect;
 		this.sum = sum;
-		
 	}
 	public String getUsername() {
 		return username;

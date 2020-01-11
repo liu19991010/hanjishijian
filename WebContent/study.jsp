@@ -45,7 +45,8 @@
 				<a href="donamic.html"><div>动态</div></a>
 			</div>
 			<div class="head">
-				<img src="img/bg.png" class="round_icon" />
+			<%System.out.print(request.getSession().getAttribute("head_portrait")) ;%>
+				<img src="image/<%=request.getSession().getAttribute("head_portrait") %>" class="round_icon" />
 			    <div class="setting">
 			    	<div>设置</div>
 			    	<div>设置</div>
@@ -114,7 +115,6 @@
 					<ul>
 					<% List<String> list2 = dao.findBookname();
 						for(int i=0;i<list2.size();i++) {
-						System.out.print(list2.get(i));
 						%>
 						<li><%=list2.get(i) %></li>
 						<%} %>

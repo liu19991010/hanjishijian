@@ -16,7 +16,6 @@ public class InvitationDaoImpl extends DBUtile implements InvitationDao{
 	Connection conn;
 	PreparedStatement ps;
 	ResultSet rs;
-	
 	/*
 	 * 查询所有帖子信息
 	 */
