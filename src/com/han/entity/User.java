@@ -1,12 +1,12 @@
 package com.han.entity;
 
 public class User {
-	String username;
-	String password;
-	String head;
-	int sex;
-	String email;
-	int age;
+	private String username;
+	private String password;
+	private String head;
+	private int sex;
+	private String email;
+	private int age;
 	public User(){
 		super();
 	}

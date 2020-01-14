@@ -25,6 +25,7 @@ public class RegistServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html; charset=utf-8");
 		String head=(String) this.getServletContext().getAttribute("111");
+		System.out.println(head+"234152q325134532341451435345134");
 		 String username = request.getParameter("username");
 	      String password = request.getParameter("password");
 	      String email = request.getParameter("email");

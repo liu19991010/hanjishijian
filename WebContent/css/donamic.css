@@ -1,0 +1,473 @@
+
+body{
+				background:url("../img/bg.png");
+				background-position: center center ;/*璁剧疆鍨傜洿 姘村钩灞呬腑*/
+				background-repeat: no-repeat;/*璁剧疆鑳屾櫙鍥剧墖涓嶅钩閾�*/
+				background-attachment: fixed;/*褰撳唴瀹归珮搴﹀ぇ浜庡浘鐗囬珮搴︽椂锛岃儗鏅浘鐗囩殑浣嶇疆鐩稿浜巚iewport鍥哄畾*/
+				background-size: cover;/*璁╄儗鏅浘鐗囧熀浜庡鍣ㄥぇ灏忎几缂�*/
+			}
+			
+
+	.donamic{
+				width: 100%;
+				height: 290px;
+			}
+		 .one{
+				width: 120px;
+				height: 120px;
+                position: absolute;
+                background: none;
+                top: 185px;
+                left: 260px;  
+                overflow: hidden;
+                border: solid 3px #B0C4DE;
+                z-index: 1;
+			}
+			.one img{
+				width: 120px;
+			    height: 120px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+			}
+			.name{
+				position: absolute;
+				top: 250px;
+				left: 390px;
+				width: 400px;
+				height: 40px;
+				/*color: #A0A0A0;*/
+				line-height: 40px;
+				font-size: 23px;
+				
+			}
+			
+			
+			
+			
+			
+			
+		.donamic{
+				width: 100%;
+				height: 290px;
+			}
+			.next{
+				width: 100%;
+				height: 40px;
+				background: #000000;
+			}
+			.next div{
+				/*color: #A0A0A0;*/
+				font-family: "寰蒋闆呴粦";
+				line-height: 40px;
+				font-size:15px;
+				width:700px;
+				height:40px;
+				margin: auto;
+			}
+			.content{
+				width: 1000px;
+				margin: auto;
+				
+			}
+			.weight{
+				width: 800px;
+				margin: auto;
+				padding-bottom: 20px;
+				background: rgb(0,0,0,0.8);
+			}
+			.weight .con{
+				width: 100%;
+				height: 25px;
+				padding: 5px;
+				padding-bottom: 0px;
+				/*background: none;*/
+				/*background: #00FF00;*/
+			}
+	
+			.weight .con .publish{
+				width: 80px;
+				height: 25px;
+				background: none;
+				/*color: #A0A0A0;*/
+				border: solid 1px #808080;
+				margin-right: 50px;
+				float: right;
+			}
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			.weight li{
+				list-style-type: none;
+				width: 750px;
+				padding: 5px;
+				margin: 20px;
+				border-top:solid 1px #A0A0A0 ;
+				background: none;
+				
+			}
+			.weight li .con1{
+				width: 720px;
+				height: 100px;
+				padding: 4px;
+				margin: 10px;
+				background: none;
+				display:none
+			}
+			
+			.weight li .con1 .connect1{
+				width: 720px;
+				height: 50px;
+				border: solid 1px #808080;
+				font-family: "寰蒋闆呴粦";
+				background: none;
+				overflow: hidden;
+				margin-bottom: 10px;
+				/*color: #FFFFFF;*/
+				
+			}
+			.weight li .con1 .publish1{
+				width: 80px;
+				height: 25px;
+				background: none;
+				/*color: #A0A0A0;*/
+				border: solid 1px #808080;
+				margin-right: 20px;
+				float: right;
+			}
+			.weight li .weig{
+				width: 730px;
+				margin: 10px;
+				/*padding: 10px;*/
+				/*color: #A0A0A0;*/
+				/*font-family: "寰蒋闆呴粦";*/
+				font-size: 15px;
+				letter-spacing: 1px;
+				
+			}
+			.weight li .weig .weig1{
+				width: 710px;
+				height: 40px;
+				margin: 5px;
+				padding: 5px;
+			}
+			.weight li .weig .weig2{
+				width: 690px;
+				margin: 5px;
+				padding: 5px;
+				padding-left: 25px;
+				font-family: "瀹嬩綋";
+				font-size: 18px;
+				letter-spacing: 1px;
+			}
+			.weight li .weig .weig3{
+				width: 672px;
+				margin: auto;
+				margin: 5px;
+				margin-left: 30px;
+			}
+			.weight li .weig .weig3 li{
+				margin:0px;
+				margin-left: 3px;
+				margin-top: 3px;
+				float: left;
+				border: 0px;
+				padding: 0px;
+			}
+			.weight li .weig .weig3 li img{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+			}
+			
+			.weight li .weig .weig1 .weig1_one{
+				width: 40px;
+				height: 40px;
+				margin-right: 10px;
+				float: left;
+				
+			}
+			.weight li .weig .weig1 .weig1_two{
+				width:300px;
+				height: 40px;
+				
+				float: left;
+			}
+			.weight li .weig .weig1 .weig1_two div{
+				width:300px;
+				height: 15px;
+				line-height: 15px;
+				font-family: "寰蒋闆呴粦";
+				font-size: 10px;
+			}
+			.weight li .weig .weig1 .weig1_one img{
+				width: 40px;
+			    height: 40px;
+				display: flex;
+				align-items: center;
+				border-radius: 50%;
+				justify-content: center;
+				overflow: hidden;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			.discull{
+				width: 740px;
+				
+				border-top: solid 1px #303030;
+				border-bottom: solid 1px #303030;
+				padding: 5px;
+				
+			}
+			.discull li{
+				border-top:solid 0px #FFFFFF ;
+				list-style-type: none;
+				width: 720px;
+				/*height: 300px;*/
+				padding: 5px;
+				margin: 0px;
+				background: none;
+			}
+			
+			.discull li .a{
+				float: left;
+				width: 40px;
+				height: 40px;
+				margin-right: 5px;
+			}
+			.discull li .a img{
+				width: 30px;
+			    height: 30px;
+				display: flex;
+				align-items: center;
+				border-radius: 50%;
+				justify-content: center;
+				overflow: hidden;
+			}
+			.discull li .b{
+				/*height: 30px;*/
+				font-family: "寰蒋闆呴粦";
+				/*line-height: 30px;*/
+				width: 590px;
+				padding: 5px;
+				font-size: 12px;
+				float: left;
+				background: none;
+			}
+			.discull li .rs{
+			width: 30px;
+			font-family: "寰蒋闆呴粦";
+			float: left;
+			margin: 5px;
+			font-size: 12px;
+			color: #00FF00;
+			background: none;
+			border: 0px;
+			margin-top: 10px;
+			}
+			.discull li .rf{
+			float: left;
+			width: 20px;
+			height: 35px;
+			background: none;
+			overflow: hidden;
+			cursor: pointer;
+			position: relative;
+			}
+			.discull li .rf div{
+			position: absolute;
+			top: 10px;
+			left: 21px;
+			width:80px;
+			font-family: "寰蒋闆呴粦";
+			font-size: 12px;
+			height: 20px;
+			/*color: #FFFFFF;*/
+			background: none;
+			
+			}
+			.discull li .rf:hover{
+			background: #808080;
+			overflow: visible;
+			}
+			.discull li .rs2{
+			width: 700px;
+			height: 90px;
+			background: none;
+			padding: 10px;
+			display: none;
+			}
+			
+			.discull li .rs2 input{
+			/*color: #FFFFFF;*/
+			width: 60px;
+			height: 20px;
+			background: none;
+			border: solid 1px #808080;
+			margin-right: 15px;
+			float: right;
+			
+			}
+			.discull li .rs2 textarea{
+			width: 690px;
+			height: 50px;
+			padding: 5px;
+			/*color: #FFFFFF;*/
+			border: solid 1px#808080;
+			margin-bottom: 5px;
+			background: none;
+			
+			}
+			
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			.discull li li{
+				border-top:solid 0px #808080 ;
+				list-style-type: none;
+				width: 690px;
+				/*height: 300px;*/
+				padding: 5px;
+				display: none;
+				margin: 0px;
+				margin-left: 20px;
+				background: none;
+			}
+			.discull li li .c{
+				float: left;
+				width: 40px;
+				height: 40px;
+				
+				margin-right: 5px;
+			}
+			.discull li li .c img{
+				width: 30px;
+			    height: 30px;
+				display: flex;
+				align-items: center;
+				border-radius: 50%;
+				justify-content: center;
+				overflow: hidden;
+			}
+			.discull li li .d{
+				/*height: 30px;*/
+				font-family: "寰蒋闆呴粦";
+				/*line-height: 30px;*/
+				width: 570px;
+				padding: 5px;
+				font-size: 12px;
+				float: left;
+				background: none;
+			}
+			.discull li li .rs1{
+			width: 50px;
+			font-family: "寰蒋闆呴粦";
+			float: left;
+			margin: 5px;
+			font-size: 12px;
+			color: #00FF00;
+			background: none;
+			border: 0px;
+			margin-top: 10px;
+			}
+			.discull li li .res {
+				width: 680px;
+				padding: 5px;
+				height: 90px;
+				background: none;
+				display: none;
+			}
+			.discull li li .res input{
+			width: 60px;
+			height: 20px;
+			background: none;
+			/*color: #A0A0A0;*/
+			border: solid 1px #808080;
+			margin-right: 15px;
+			float: right;
+			
+			}
+			.discull li li .res textarea{
+			width: 670px;
+			height: 50px;
+			padding: 5px;
+			/*color: #A0A0A0;*/
+			border: solid 1px #808080;
+			margin-bottom: 5px;
+			background: none;
+			} 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+.weight li .vis{
+				width: 60px;
+				height: 20px;
+				margin: 10px;
+				margin-left: 15px;
+				margin-bottom: 0px;
+				border: solid 1px #808080;
+				/*color: #A0A0A0;*/
+				background: none;
+				cursor: pointer;
+			}
+			.weight li .vis:hover{
+				background: #808080;
+			}

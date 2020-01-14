@@ -1,0 +1,78 @@
+body{
+				background: url(../img/bg.png);/*娣诲姞鑳屾櫙鍥剧墖*/
+				background-position: center center ;/*璁剧疆鍨傜洿 姘村钩灞呬腑*/
+				background-repeat: no-repeat;/*璁剧疆鑳屾櫙鍥剧墖涓嶅钩閾�*/
+				background-attachment: fixed;/*褰撳唴瀹归珮搴﹀ぇ浜庡浘鐗囬珮搴︽椂锛岃儗鏅浘鐗囩殑浣嶇疆鐩稿浜巚iewport鍥哄畾*/
+				background-size: cover;/*璁╄儗鏅浘鐗囧熀浜庡鍣ㄥぇ灏忎几缂�*/
+				
+				}
+        	
+        	.connet{
+        		width: 400px;
+        		margin: auto;
+        		padding-top: 30px;
+        		height: 500px;
+        		background: #000000;
+        		margin-top: 100px;
+        	}
+        	.connet .connect{
+        		width: 350px;
+        		margin: 25px;
+        		height: 35px;
+        		margin-top: 30px;
+        		margin-bottom: 0px;
+        	}
+        	.connet .connect label{
+        		margin-left: 20px;
+        		margin-right: 10px;
+        		width: 60px;
+        		height: 35px;
+        		color: #FFFFFF;
+        		line-height: 35px;
+        		text-align: center;
+        		float: left;
+        	}
+        	.connet .connect input{
+        		width: 250px;
+        		height:32px;
+        		border: solid 1px #FFFFFF;
+        		border-radius: 20px;
+        		background: none;
+        	}
+        	.connet textarea{
+        		width: 300px;
+        		margin-left: 45px;
+        		padding: 5px;
+        		background: none;
+        		border-radius: 5px;
+        		height: 80px;
+        		font-family: "微软雅黑";
+        		border: solid 1px #FFFFFF;
+        		overflow:hidden;
+        	}
+        	.connet .f{
+        		width: 350px;
+        		height:30px;
+        		line-height: 30px;
+        		font-size: 20px;
+        		margin: auto;
+        		padding:30px;
+        		padding-bottom: 20px;
+        		text-align: center;
+        	}
+        	.f1{
+        		width: 80px;
+        		height: 30px;
+        		border: solid 1px #FFFFFF;
+        		background: none;
+        		margin: auto;
+        		margin-top: 20px;
+        		margin-left: 160px;
+        		cursor:pointer;
+        	}
+        	.f1:hover{
+        		background: #808080;
+        	}
+        	h1{
+        		text-align:center;
+        	}

@@ -15,5 +15,9 @@ public interface LoginDao {
 	 * 判断用户是否存在
 	 */
 	public int userExist(String username,String password);
+	/*
+	 * 根据用户查找头像
+	 */
+	public String findHead(String username);
 	
 }
