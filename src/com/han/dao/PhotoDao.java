@@ -13,5 +13,9 @@ public interface PhotoDao {
 	 * 查询所有图片信息
 	 */
 	public List<Photo> findAllPhoto(int donamic_id);
+	/*
+	 * 添加图片
+	 */
+	public int insertPhoto(Photo photo);
 
 }
