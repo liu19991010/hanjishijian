@@ -27,7 +27,6 @@
     			<ul >
     			<%
     			PhotoDao dao = new PhotoDaoImpl();
-    			System.out.print(111);
     			int k=(int)request.getSession().getAttribute("number");
     			   List<Photo> list = dao.findAllPhoto(k+1);
     			 

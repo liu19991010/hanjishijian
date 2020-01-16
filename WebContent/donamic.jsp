@@ -38,24 +38,19 @@
 		<div class="title" style="background: rgb(0,0,0,0.7);">
 			<div class="logo"></div>
 			<div class="menu">
-				<a href="index.html"><div >主页</div></a>
-				<a href="study.html"><div>书斋</div></a>
+				<a href="index.jsp"><div >主页</div></a>
+				<a href="study.jsp"><div>书斋</div></a>
 				<div style="color: #f99d14;">动态</div>
-				<div>待定</div>
-				<div>待定</div>
+				<a href="cartoon.jsp"><div>动画</div></a>
+				<a href="game.jsp"><div>游戏</div></a>
 			</div>
 			<div class="head">
-				<img src="img/bg.png" class="round_icon" />
-			    <div class="setting">
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    </div>
+				<%LoginDao dao1 = new LoginDaoImpl(); %>
+				<img src="image/<%=dao1.findHead((String)request.getSession().getAttribute("name")) %>" class="round_icon" />
 			</div>
+			<div style="clear:both"></div>v>
 			</div>
-			<div class="one"><img src="img/bg.png"/></div>
+			<div class="one"><img src="image/<%=dao1.findHead((String)request.getSession().getAttribute("name")) %>"/></div>
 			<div class="name"><%=request.getSession().getAttribute("name") %></div>
 			<div class="donamic">
 				<img src="img/donamic.png" />
@@ -71,10 +66,8 @@
 					<div style="clear:both"></div>
 					<ul>
 					<% DonamicDao dao = new DonamicDaoImpl();
-						LoginDao dao1 = new LoginDaoImpl();
 						List<Donamic>list = dao.findAllDonamic();
 						request.getSession().setAttribute("number", list.size());
-						System.out.print(list.size());
 						for(Donamic donamic:list) {
 					%>
 
