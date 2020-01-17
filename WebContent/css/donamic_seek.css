@@ -1,0 +1,93 @@
+	   	body{
+        		background: url('../img/bg.png');
+        		background-size: cover;
+        	}
+        	.donamic{
+        		width: 612px;
+        		margin-top: 100px;
+        		margin: auto;
+        		margin-top: 100px;
+        		padding-top: 10px;
+        		padding-bottom: 10px;
+        		background: #000000;
+        	}
+        	.donamic .donamic_one{
+        		width: 612px;
+        		height: 50px;
+        		background: none;
+        		color: #A0A0A0;
+        		font-size: 40px;
+        		font-family: "华文新魏";
+        		text-align: center;
+        		line-height: 50px;
+        		margin-bottom: 10px;
+        	}
+        	.donamic .donamic_two{
+        		width: 582px;
+        		margin: 15px;
+        		margin-bottom: 8px;
+        		padding-top: 10px;
+        		padding-bottom: 5px;
+        		background: #101010;
+        	}
+        	.donamic .donamic_two textarea{
+        		width: 572px;
+        		height: 60px;
+        		overflow: hidden;
+        		background: none;
+        		padding: 5px;
+        		border: 0px;
+        		color: #A0A0A0;
+        	}
+        	
+        	.donamic .donamic_two li{
+        		width: 190px;
+        		height: 190px;
+        		margin-left: 3px;
+        		margin-top: 3px;
+        		background: none;
+        		border: 0px;
+        		list-style-type: none;
+        		float: left;
+        	}
+        	.donamic .donamic_two li img{
+        		width: 190px;
+			    height: 190px;
+				display: flex;
+				align-items:center;
+				justify-content:center;
+				overflow: hidden;
+        	}
+        	.add{
+        		width: 80px;
+        		height: 30px;
+        		border: solid 1px #808080;
+        		color: #A0A0A0;
+        		line-height: 30px;
+        		text-align: center;
+        		font-family: "华文新魏";
+        		background: none;
+        		float: right;
+        		/*margin: 5px;*/
+        		margin-bottom: 5px;
+        		margin-right: 40px;
+        		font-size: 15px;
+        	}
+        	.add:hover{
+        		background: #808080;
+        	}
+        	.seek{
+        		width: 80px;
+        		height: 30px;
+        		margin-left: 265px;
+        		border: solid 1px #808080;
+        		color: #A0A0A0;
+        		line-height: 30px;
+        		text-align: center;
+        		font-family: "华文新魏";
+        		background: none;
+        		font-size: 15px;
+        	}
+        	.seek:hover{
+        		background: #808080;
+        	}

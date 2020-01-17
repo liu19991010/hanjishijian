@@ -42,5 +42,27 @@ public class DonamicDaoImpl extends DBUtile implements DonamicDao{
 		}
 		return list;
 	}
+	/*
+	 * Ìí¼Ó¶¯Ì¬
+	 */
+	@Override
+	public int insert(Donamic donamic) {
+		int temp = 0;
+		conn = super.getConnection();
+		String sql = "insert into donamic(username,donamicID,connect,time) value(?,null,?,?) ";
+		try {
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, donamic.getUsername());
+			ps.setString(2, donamic.getConnect());
+			ps.setString(3, donamic.getTime());
+			temp = ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			super.closeALL(conn, ps, rs);
+		}
+		
+		return temp;
+	}
 
 }

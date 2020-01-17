@@ -1,0 +1,29 @@
+body{
+		background: #A0A0A0;
+	}
+
+.up,.down,.left,.right{
+font-size:30px;
+
+
+}
+canvas{
+border-style:solid;
+float:left;
+}
+.right{float:left;
+margin-top:80px;
+margin-left:600px;
+height:100px;
+width:50px;
+}
+.down,.up{
+
+margin-left:750px;
+}
+.left{
+margin-top:80px;
+margin-bottom:100px;
+margin-left: 5px;
+
+}

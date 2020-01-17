@@ -38,21 +38,19 @@
 		<div class="title" style="background: rgb(0,0,0,0.8);">
 			<div class="logo"></div>
 			<div class="menu">
-				<a href="index.html"><div>主页</div></a>
-				<a href="qingniao.html"><div>青鸟</div></a>
-				<a href="trivel"><div>旅行</div></a>
-				<div style="color: #f99d14;">书斋</div>
-				<a href="donamic.html"><div>动态</div></a>
+				<a href="index.jsp"><div >主页</div></a>
+				<div style="color:#f99d14; ">书斋</div> 
+				<a href="donamic.jsp"><div >动态</div></a>
+				<a href="cartoon.jsp"><div>动画</div></a>
+				<a href="game.jsp"><div>游戏</div></a>
 			</div>
 			<div class="head">
 			<%System.out.print(request.getSession().getAttribute("head_portrait")) ;%>
 				<img src="image/<%=request.getSession().getAttribute("head_portrait") %>" class="round_icon" />
 			    <div class="setting">
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    	<div>设置</div>
+			    	<div class="aaa">
+			    		此间少年
+			    	</div>
 			    </div>
 			</div>
 		</div>

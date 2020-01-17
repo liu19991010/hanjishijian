@@ -143,6 +143,9 @@ public class Text1 {
 		for(Donamic_reply dd:list3) {
 			System.out.println(dd.getConnect());
 		}
+		Donamic_replyDao dao5  = new Donamic_replyDaoImpl();
+		Donamic_reply don = new Donamic_reply(1, "liu", 0, "我了个去dddddddddddddddddd","2018-12-13 12:34", "刘");
+		System.out.println(dao5.insertDonamic_reply(don));
 		
 		
 		

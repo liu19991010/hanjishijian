@@ -37,16 +37,6 @@ public class Donamic_replyDaoImpl extends DBUtile implements Donamic_replyDao {
 				donamic_reply.setConnect(rs.getString(4));
 				donamic_reply.setTime(rs.getString(5));
 				donamic_reply.setReply_username(rs.getString(6));
-				
-//				donamic_comment.setUsername(rs.getString(1));
-//				donamic_comment.setDonamic_id(rs.getInt(2));
-//				donamic_comment.setComment_id(rs.getInt(3));
-//				donamic_comment.setConnect(rs.getString(4));
-//				donamic_comment.setTime(rs.getString(5));
-//				Donamic_comment do = new Donamic_comment();
-//				photo.setDonamic_id(rs.getInt(1));
-//				photo.setPhoto_id(rs.getInt(2));
-//				photo.setPhoto(rs.getString(3));
 				list.add(donamic_reply);
 			}
 		} catch (SQLException e) {
@@ -61,8 +51,25 @@ public class Donamic_replyDaoImpl extends DBUtile implements Donamic_replyDao {
 	 */
 	@Override
 	public int insertDonamic_reply(Donamic_reply donamic_reply) {
-		// TODO Auto-generated method stub
-		return 0;
+		int temp = 0;
+		conn = super.getConnection();
+		String sql = "insert into donamic_comment_reply(connect_id,connect_username,reply_id,reply_connect,time,reply_username) value(?,?,null,?,?,?) ";
+		try {
+			ps = conn.prepareStatement(sql);
+			ps.setInt(1,donamic_reply.getConnect_id() );
+			ps.setString(2, donamic_reply.getComment_username());
+			ps.setString(3, donamic_reply.getConnect());
+			ps.setString(4, donamic_reply.getTime());
+			ps.setString(5, donamic_reply.getReply_username());
+			
+			temp = ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			super.closeALL(conn, ps, rs);
+		}
+		
+		return temp;
 	}
 
 }

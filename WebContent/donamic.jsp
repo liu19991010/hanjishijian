@@ -38,25 +38,20 @@
 		<div class="title" style="background: rgb(0,0,0,0.7);">
 			<div class="logo"></div>
 			<div class="menu">
-				<a href="index.html"><div >主页</div></a>
-				<a href="study.html"><div>书斋</div></a>
+				<a href="index.jsp"><div >主页</div></a>
+				<a href="study.jsp"><div>书斋</div></a>
 				<div style="color: #f99d14;">动态</div>
-				<div>待定</div>
-				<div>待定</div>
+				<a href="cartoon.jsp"><div>动画</div></a>
+				<a href="game.jsp"><div>游戏</div></a>
 			</div>
 			<div class="head">
-				<img src="img/bg.png" class="round_icon" />
-			    <div class="setting">
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    	<div>设置</div>
-			    </div>
+				<%LoginDao dao1 = new LoginDaoImpl(); %>
+				<img src="image/<%=dao1.findHead((String)request.getSession().getAttribute("name")) %>" class="round_icon" />
 			</div>
+			<div style="clear:both"></div>v>
 			</div>
-			<div class="one"><img src="img/bg.png"/></div>
-			<div class="name">时光清浅</div>
+			<div class="one"><img src="image/<%=dao1.findHead((String)request.getSession().getAttribute("name")) %>"/></div>
+			<div class="name"><%=request.getSession().getAttribute("name") %></div>
 			<div class="donamic">
 				<img src="img/donamic.png" />
 			</div>
@@ -66,13 +61,13 @@
 			<div class="content">
 				<div class="weight">
 					<div class="con">
-						<input type="submit" name="publish" id="publish" class="publish" value="发布动态" />
+						<a href="donamic_seek.jsp"><input type="submit" name="publish" id="publish" class="publish" value="发布动态" /></a>
 					</div>
 					<div style="clear:both"></div>
 					<ul>
 					<% DonamicDao dao = new DonamicDaoImpl();
-						LoginDao dao1 = new LoginDaoImpl();
 						List<Donamic>list = dao.findAllDonamic();
+						request.getSession().setAttribute("number", list.size());
 						for(Donamic donamic:list) {
 					%>
 
@@ -141,16 +136,21 @@
 										<div>查看所有回复</div>
 										</div>
 										<div style="clear:both"></div>
+										<form action="replay1" method="post">
 										<div class="rs2">
 										<textarea  name="res1" id="res1" placeholder="请输入内容！"></textarea>
 						                <input type="submit" name="publish3" id="publish3"  value="发布" />
+						                <input name="replay11" id="replay11" value="<%=dona.getComment_id() %>" style="display:none;"/>
+						                <input name="replay12" id="replay12" value="<%=dona.getUsername()%>" style="display:none;"/>
 						                 </div>
+						                 </form>
 										
 											   <ul>
-											   <% Donamic_replyDao dao4 = new Donamic_replyDaoImpl();
+											   <% 
+											      Donamic_replyDao dao4 = new Donamic_replyDaoImpl();
 											      List<Donamic_reply> list4 = dao4.findAllDonamic_reply(dona.getComment_id());
 											      for(Donamic_reply d:list4){
-											   %>
+											    %>
 												  <li><div class="c">
 													<img src="image/<%=dao1.findHead(d.getReply_username()) %>" />
 												</div>
@@ -160,9 +160,14 @@
 												</div>
 												<input type="button" value="回复" class="rs1"/>
 												<div style="clear:both"></div>
+												<form action="replay2" method="post">
 												<div class="res">
 												<textarea  name="res" id="res" placeholder="请输入内容！"></textarea>
-						                        <input type="submit" name="publish2" id="publish2"  value="发布" /></div>
+						                        <input type="submit" name="publish2" id="publish2"  value="发布" />
+						                        <input name="replay21" id="replay21" value="<%=d.getConnect_id() %>" style="display:none;"/>
+						                        <input name="replay22" id="replay22" value="<%=d.getReply_username()%>" style="display:none;"/>
+						                        </div>
+						                        </form>
 												  </li>
 												  <%} %>
 											</ul>
@@ -220,25 +225,38 @@ $(document).ready(function(e) {
     	$(this).parent().find(".con1").toggle(); 
     });
 });
-</script>
-<script>
+
 $(document).ready(function(e) {
     $(".discull li li .rs1").click(function(e) {
     	$(this).parent().find(".res").toggle(); 
     });
 });
-</script>
-<script>
+
 $(document).ready(function(e) {
     $(".discull li .rs").click(function(e) {
     	$(this).parent().find(".rs2").toggle(); 
     });
 });
-</script>
-<script>
+
 $(document).ready(function(e) {
     $(".discull li .rf").click(function(e) {
     	$(this).parent().find("li").toggle(); 
+    });
+});
+
+$(document).ready(function(e) {
+    $(".discull li ").hover(function(e) {
+    	$(this).find(".rf"). toggle();
+    });
+});
+$(document).ready(function(e) {
+    $(".discull li ").hover(function(e) {
+    	$(this).find(".rs"). toggle();
+    });
+});
+$(document).ready(function(e) {
+    $(".discull li li").hover(function(e) {
+    	$(this).find(".rs1"). toggle();
     });
 });
 </script>

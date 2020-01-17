@@ -26,7 +26,7 @@ public class PhotoDaoImpl extends DBUtile implements PhotoDao{
 		return 0;
 	}
 	/*
-	 * 查询所有图片信息
+	 * 根据id查询所有图片信息
 	 */
 
 	@Override
@@ -53,6 +53,30 @@ public class PhotoDaoImpl extends DBUtile implements PhotoDao{
 		}
 
 		return list;
+	}
+
+	/*
+	 * 添加图片
+	 * @see com.han.dao.PhotoDao#insertPhoto(com.han.entity.Photo)
+	 */
+	@Override
+	public int insertPhoto(Photo photo) {
+		int temp = 0;
+		conn = super.getConnection();
+		String sql = "insert into photo(donamic_id,photo_id,photo) value(?,null,?)";
+		try {
+			ps = conn.prepareStatement(sql);
+			ps.setInt(1, photo.getDonamic_id());
+			ps.setString(2, photo.getPhoto());
+			temp = ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			super.closeALL(conn, ps, rs);
+		}
+		
+		return temp;
+		
 	}
 
 	

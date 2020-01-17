@@ -30,13 +30,13 @@ public class LoginServlet extends HttpServlet {
         System.out.println(password);
         LoginDao dao = new LoginDaoImpl();
         request.getSession().setAttribute("name", username);
-//        this.getServletContext().setAttribute("name",username);
+//      this.getServletContext().setAttribute("name",username);
         String head_portrait = dao.findHead(username);
         request.getSession().setAttribute("head_portrait", head_portrait);
         
         int temp = dao.userExist(username, password);
         if(temp==1) {
-        	request.getRequestDispatcher("donamic.jsp").forward(request, response);
+        	request.getRequestDispatcher("index.jsp").forward(request, response);
 //      	  response.getWriter().print("³É¹¦");
         }else {
       	  response.getWriter().print("Ê§°Ü");
